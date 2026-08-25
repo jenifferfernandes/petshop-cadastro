@@ -1,0 +1,16 @@
+.cadastro__descricao {
+    height: 15.75rem;
+}
+
+.cadastro__preco-container,
+.cadastro__descricao-container {
+    width: 50%;
+}
+
+.cabecalho__container-logo img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}

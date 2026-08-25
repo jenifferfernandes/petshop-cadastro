@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop | Criar conta </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+
+</head>
+
+<body>
+    <main class="container flex flex--coluna flex--centro">
+        <div class="cadastro-cabecalho">
+            <img src="./img/logo.png" alt="Logo" class="cadastro-cabecalho__logo">
+            <h1 class="cadastro-cabecalho__titulo">PetShop</h1>
+        </div>
+        <section>
+            <h2 class="cartao__titulo">Complete seu cadastro</h2>
+            <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+                <fieldset>
+                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" data-tipo="nome" type="text" placeholder="Nome" required>
+                        <label class="input-label" for="nome">Nome</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" data-tipo="email" type="email" placeholder="Email" required>
+                        <label class="input-label"   for="email">Email</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="senha" id="senha" class="input" data-tipo="senha" type="password" minlength="6" maxlength="12"
+                            placeholder="Senha" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{6,12}"
+                            title="A senha deve ter entre 6 e 12 caracteres, com pelo menos uma letra maiúscula, uma minúscula e um número."
+                            required>
+                        <label class="input-label" for="senha">Senha</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="formulario__legenda">Informações Pessoais</legend>
+
+                    <div class="input-container">
+                        <input name="nascimento" id="nascimento" class="input" type="date"
+                            placeholder="Data de Nascimento" data-tipo="dataNascimento" required>
+                        <label class="input-label" for="nascimento">Data de Nascimento</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="cpf" id="cpf" class="input" type="text" placeholder="CPF" data-tipo="cpf" required>
+                        <label class="input-label" for="cpf">CPF</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="formulario__legenda">Endereço</legend>
+
+                    <div class="input-container">
+                        <input name="cep" id="cep" class="input" type="text" placeholder="cep" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                        <label class="input-label" for="cep">CEP</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="logradouro" id="logradouro" class="input" type="text" placeholder="logradouro" data-tipo="logradouro" required>
+                        <label class="input-label" for="logradouro">Logradouro</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-tipo="cidade" required>
+                        <label class="input-label" for="cidade">Cidade</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input name="estado" id="estado" class="input" type="text" placeholder="estado" data-tipo="estado" required>
+                        <label class="input-label" for="estado">Estado</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <button class="botao">Cadastrar</button>
+
+            </form>
+        </section>
+    </main>
+    <script src="./js/app.js" type="module"></script>
+
+
+</body>
+
+</html>

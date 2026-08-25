@@ -1,0 +1,19 @@
+@import url(componentes/tabela.css);
+
+.clientes-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.cartao {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 1200px) {
+	.clientes-container {
+		padding-left: calc((100vw - 900px)/2);
+		padding-right: calc((100vw - 900px)/2);
+	}
+}

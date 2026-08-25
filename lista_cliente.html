@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop | Clientes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/lista_cliente.css">
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <img src="./img/logo_pet.png" alt="logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="./index.html">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="./cadastro_produto.html">Produtos</a></li>
+                <li class="cabecalho__link"><a href="./lista_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container flex flex--coluna">
+        <section class="cartao">
+            <h1 class="cartao__titulo">Clientes cadastrados</h1>
+
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th class="tabela__coluna--m">Nome</th>
+                        <th class="tabela__coluna--m">Email</th>
+                        <th class="tabela__coluna--p">CPF</th>
+                        <th class="tabela__coluna--p tabela__alinhamento--direita">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Beatriz Souza</td>
+                        <td>ana.souza@email.com</td>
+                        <td>123.456.789-09</td>
+                        <td class="tabela__alinhamento--direita">
+                            <ul class="tabela__botoes-controle">
+                                <li><button class="botao-simples botao-simples--editar">Editar</button></li>
+                                <li><button class="botao-simples botao-simples--excluir">Excluir</button></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Eduardo Lima</td>
+                        <td>carlos.lima@email.com</td>
+                        <td>987.654.321-00</td>
+                        <td class="tabela__alinhamento--direita">
+                            <ul class="tabela__botoes-controle">
+                                <li><button class="botao-simples botao-simples--editar">Editar</button></li>
+                                <li><button class="botao-simples botao-simples--excluir">Excluir</button></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marina Torres</td>
+                        <td>marina.torres@email.com</td>
+                        <td>456.789.123-22</td>
+                        <td class="tabela__alinhamento--direita">
+                            <ul class="tabela__botoes-controle">
+                                <li><button class="botao-simples botao-simples--editar">Editar</button></li>
+                                <li><button class="botao-simples botao-simples--excluir">Excluir</button></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
